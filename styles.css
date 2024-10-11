@@ -72,3 +72,18 @@ nav ul li a {
 .button:hover {
     background-color: #e55335;
 }
+
+/* Mobilvänlig design */
+@media (max-width: 768px) {
+    header {
+        height: 60vh;
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 1.2rem;
+    }
+}
