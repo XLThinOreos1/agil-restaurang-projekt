@@ -182,6 +182,14 @@ button:hover {
     background-color: #e55335;
 }
 
+/* Bekräftelsemeddelande */
+#confirmation-message {
+    display: none;
+    font-size: 1.2rem;
+    color: green;
+    margin-top: 20px;
+}
+
 /* Footer-section */
 footer {
     background-color: #333;

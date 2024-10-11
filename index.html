@@ -57,7 +57,7 @@
     <!-- Kontaktformulär-del -->
     <section id="kontakt">
         <h2>Kontakt</h2>
-        <form action="/send-message" method="post">
+        <form id="kontakt-form" method="post">
             <label for="name">Namn:</label>
             <input type="text" id="name" name="name" required />
 
@@ -69,6 +69,21 @@
 
             <button type="submit">Skicka</button>
         </form>
+        <div id="confirmation-message" style="display: none">
+            <p>Tack för ditt meddelande! Vi återkommer så snart som möjligt.</p>
+        </div>
+
+        <script>
+            const form = document.getElementById('kontakt-form');
+            const confirmationMessage = document.getElementById('confirmation-message');
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault(); // Förhindra att sidan laddas om
+
+                form.style.display = 'none';
+                confirmationMessage.style.display = 'block';
+            });
+        </script>
     </section>
 
     <!-- Öppettider och kontaktinformation-->
