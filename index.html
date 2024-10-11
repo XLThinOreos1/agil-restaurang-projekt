@@ -54,6 +54,23 @@
             </div>
     </section>
 
+    <!-- Kontaktformulär-del -->
+    <section id="kontakt">
+        <h2>Kontakt</h2>
+        <form action="/send-message" method="post">
+            <label for="name">Namn:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">E-post:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Meddelande:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Skicka</button>
+        </form>
+    </section>
+
     <!-- Öppettider och kontaktinformation-->
 
     <footer>
@@ -65,7 +82,7 @@
             <h4>Kontakt</h4>
             <p>
                 Telefon: 12 34 567 89 101<br />
-                Adress: <a href="https://maps.google.com">Restaurang gatan, Stockholm</a>
+                Adress: <a href="https://maps.app.goo.gl/9BKNR2XZxkn9DiF86">Restaurang gatan, Stockholm</a>
             </p>
         </div>
     </footer>
